@@ -5,13 +5,15 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
     return NavigationDrawer(
       children: [
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 28, 16, 16),
           child: Text(
             'Options',
-            style: Theme.of(context).textTheme.titleSmall,
+            style: textTheme.titleSmall,
           ),
         ),
         NavigationDrawerDestination(
@@ -22,7 +24,7 @@ class CustomDrawer extends StatelessWidget {
               const SizedBox(width: 10),
               Text(
                 '11/02/2023 ás 04:06',
-                style: Theme.of(context).textTheme.bodySmall,
+                style: textTheme.bodySmall,
               ),
             ],
           ),

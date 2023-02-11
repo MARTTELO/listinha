@@ -5,11 +5,13 @@ class UserImageButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
     return GestureDetector(
-      child: const CircleAvatar(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.purple,
-        child: Text('M'),
+      child: CircleAvatar(
+        backgroundColor: colorScheme.primary,
+        foregroundColor: colorScheme.onPrimary,
+        child: const Text('M'),
       ),
     );
   }
