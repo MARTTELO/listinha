@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:listinha/src/shared/themes/app_Widget.dart';
+import 'package:listinha/src/tela_principal.dart';
 
 void main() {
-  runApp(const AppWidget());
+  runApp(const TelaPrincipal());
 }

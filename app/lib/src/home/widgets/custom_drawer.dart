@@ -8,6 +8,13 @@ class CustomDrawer extends StatelessWidget {
     final theme = Theme.of(context);
     final textTheme = theme.textTheme;
     return NavigationDrawer(
+      onDestinationSelected: (index) => {
+        if (index == 1)
+          {
+            Navigator.of(context).pop,
+            Navigator.of(context).pushNamed('/config'),
+          }
+      },
       children: [
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 28, 16, 16),

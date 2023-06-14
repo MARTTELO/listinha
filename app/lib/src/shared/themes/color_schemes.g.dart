@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-part of 'app_Widget.dart';
+part of 'tela_principal.dart';
 part of 'themes.dart';
 
 const _lightColorScheme = ColorScheme(
